@@ -14,10 +14,6 @@ gulp.task('styles', () => {
         .pipe(reload({ stream: true }));
 });
 
-// gulp.task('scripts', () => {
-//     gulp.reload
-// });
-
 gulp.task('watch', () => {
     gulp.watch('scss/**/*.scss', ['styles']);
     gulp.watch('index.html', browserSync.reload);
