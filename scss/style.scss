@@ -1,0 +1,152 @@
+@import "partials/global";
+
+// COLOURS ======================
+$mainOrange: #f74000;
+$sectionBackground: #e8e8e8;
+$secondaryColour: #ff7e38;
+
+// FONT =========================
+$mainFont: 'Muli', sans-serif;
+
+html, body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    
+    
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: none;
+	padding: 10px 20px 10px 20px;
+}
+
+.cell {
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+
+section.mainApp {
+    background-image: url(../images/food_background_large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+
+aside {
+    float: left;
+    background: $mainOrange;
+    width: 100px;
+    height: 100%;
+    img {
+        margin: 25px;
+    }
+}
+
+section.type{
+    background: darkcyan;
+     background: $sectionBackground;
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $mainFont;
+    height: 100vh;
+    text-align: center;
+    box-shadow: 1px 1px 50px #A9A9A9;
+    h1 {
+        margin: 0 0 20px 0;
+        color: $secondaryColour;
+        font-size: 50px;
+    }
+    h3 {
+        margin: 0 0 10px 0;
+        padding-top: 280px;
+        color: $mainOrange;
+    }
+}
+
+
+.styledSelect {
+    background: url(../images/noun_755930_cc.svg) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: $secondaryColour;
+   margin: 0 auto;
+}
+
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px; 
+    width: 268px;
+}
+
+section.restaurants {
+    background: $secondaryColour;
+    margin: 0;
+    position: relative;
+    width: 100wh;
+    // height: 100vh;
+    height: 100%;
+    ul {
+        margin: 0;
+        background: $sectionBackground;
+        width: 800px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        li {            
+            list-style-type: none;
+            h3 {
+                color: $secondaryColour;
+                font-size: 14px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        li:before{
+            font-family: “FontAwesome”;
+            content: “\f0f5”;
+            width: 10px;
+            height: 10px;
+            
+        }
+    }
+}
+
+@media (max-width: 817px) {
+    section.type {
+        width: 600px;
+        h1 {
+            font-size: 30px;
+        }
+        h3 {
+            padding-top: 240px;
+        }
+    }
+    .cell {
+    width: calc(100% / 2);
+    padding: 0 10px;
+    }
+    li.cell {
+        padding: 0;
+    }
+}
