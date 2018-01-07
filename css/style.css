@@ -140,20 +140,7 @@ img {
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  padding: 10px 20px 10px 20px; }
+  display: flex; }
 
 .cell {
   width: calc(100% / 3);
@@ -197,8 +184,9 @@ section.type {
     color: #f74000; }
 
 .styledSelect {
-  background: url(../images/noun_755930_cc.svg) no-repeat 96% 0;
-  height: 29px;
+  background: url(../images/arrow.png) no-repeat 96% 8px;
+  height: 40px;
+  padding: 10px;
   overflow: hidden;
   width: 240px;
   border-radius: 20px;
@@ -209,8 +197,8 @@ select {
   background: transparent;
   border: none;
   font-size: 14px;
-  height: 29px;
-  padding: 5px;
+  font-size: 16px;
+  padding-left: 10px;
   width: 268px; }
 
 section.restaurants {
@@ -239,6 +227,21 @@ section.restaurants {
       content: “\f0f5”;
       width: 10px;
       height: 10px; }
+
+.rest {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  padding: 10px 20px 10px 20px; }
 
 @media (max-width: 817px) {
   section.type {

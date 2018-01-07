@@ -23,11 +23,7 @@ body {
 
 .flex {
 	display: flex;
-	flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: none;
-	padding: 10px 20px 10px 20px;
+	
 }
 
 .cell {
@@ -78,8 +74,11 @@ section.type{
 
 
 .styledSelect {
-    background: url(../images/noun_755930_cc.svg) no-repeat 96% 0;
-   height: 29px;
+    // background: url(../images/noun_755930_cc.svg) no-repeat 96% 0;
+    background: url(../images/arrow.png) no-repeat 96% 8px;
+//    height: 29px;
+    height: 40px;
+   padding: 10px;
    overflow: hidden;
    width: 240px;
    -webkit-border-radius: 20px;
@@ -93,8 +92,8 @@ select {
     background: transparent;
     border: none;
     font-size: 14px;
-    height: 29px;
-    padding: 5px; 
+    font-size: 16px;
+    padding-left: 10px;  
     width: 268px;
 }
 
@@ -130,6 +129,14 @@ section.restaurants {
             
         }
     }
+}
+
+.rest {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: none;
+	padding: 10px 20px 10px 20px;
 }
 
 @media (max-width: 817px) {
